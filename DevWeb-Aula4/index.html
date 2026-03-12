@@ -6,6 +6,13 @@
     <title>HTML Tabelas</title>
 
     <style>
+        h1{
+            color: rgb(204, 203, 203);
+        }
+        body{
+            background-color: rgb(61, 60, 60);
+        }
+     
         table,tr,th,td{
             border: solid 2px;
             border-collapse: collapse;
@@ -13,6 +20,9 @@
         }
         th{
             background-color: rgb(62, 202, 202);
+        }
+        tr{
+            background-color: white;
         }
     </style>
 </head>
@@ -25,6 +35,77 @@
 
        <tr><td>Sesi</td><td>Jose</td><td>Coordenador</td></tr>   <!--td celula da teabela -->
 
+    </table><br><br>
+
+    <h1>Utilizando tabela com coluna collapsada (ocupar duas areas na colunas)</h1>
+
+
+    <!-- colspan="2" colapsar tabela -->
+    <table>
+        <tr><th colspan="2">Nome</th><th>Idade</th></tr>
+        <tr><td>Marco</td><td>Silva</td><td>18</td></tr>
+        <tr><td>Ronaldo</td><td>Pereira</td><td>17</td></tr>
+    </table>
+
+    <h1>Utilizando tabela cabeçalho vertical com coluna collapsada (ocupar duas linhas na colunas)</h1>
+
+
+    <!-- rowspan="2" colapssar linha -->
+    <table>
+        <tr><th>Nome</th><td>marco</td><td>Caio</td></tr>
+        <tr><th rowspan="2">Telefone</th><td>(11) 970401018</td><td>(11) 11970401018</td></tr>  
+        <tr><td>(11) 970401018</td><td>(11) 970401018</td></tr>
+    </table><br><br><br>
+
+    <h1 style="text-align: center;">DESAFIO!</h1>
+
+    <table style="margin: auto;">
+        <tr>
+            <th>Código</th>
+            <th>Categoria</th>
+            <th>Produto</th>
+            <th>Imagem</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>01234</td>
+            <td>Eletronico</td>
+            <td>Mouse</td>
+            <td><a href="https://www.logitechstore.com.br/mouse-sem-fio-para-jogos-logitech-g-pro-wireless/?srsltid=AfmBOoorocaUxDliJN9n6PjAyyJImT_CuOkPEWRr6p1lawrmFobMYjNc" target="_blank"><img src="https://www.logitechstore.com.br/media/catalog/product/cache/105e6f420716e0751863c4b81f527d17/g/a/gabarito_logitech.png" alt="mouse" width="100px"></a></td>
+            <td>R$ 100.00</td>
+        </tr>
+        <tr>
+            <td>0456</td>
+            <td>Eletronico</td>
+            <td>Monitor</td>
+            <td><a href="https://www.kalunga.com.br/prod/monitor-gamer-led-tela-de-24-widescreen-full-hd-tempo-de-resposta-5ms-taxa-de-atualizacao-de-100hz-hdmi-preto-s3-ls24d300ga-samsung-cx-1-un/476886" target="_blank"><img src="https://img.kalunga.com.br/fotosdeprodutos/476886z_1.jpg" alt="monitor" width="100px"></a></td>
+            <td>R$ 1500.00</td>
+        </tr>
+        <tr>
+            <td>5674</td>
+            <td>Eletronico</td>
+            <td>Teclado</td>
+            <td><a href="https://www.kalunga.com.br/prod/teclado-usb-gamer-centauri-abnt-preto-tgct-elg-cx-1-un/671595?srsltid=AfmBOooPc3iEpDV9O916x7cINMqOnqPM7J9ID8Bvzcr1Q_Bcl4jEgFrr_2I" target="_blank"><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSljZr9dIOfwTrEYAkivMpPeV7JYswk13DLltWKmYNpgHMiGbPrap6n8WYYkgz8xZEPL7nCIAKFTjmj7ZQFt8D9nINBiJhGN1YM1bwJgAA623ZJrf7KcHFZCg" alt="teclado" width="100px"></a></td>
+            <td>R$ 100.00</td>
+        </tr>
+        <tr>
+            <td>5555</td>
+            <td>Eletronico</td>
+            <td>Gabinete</td>
+            <td><a href="https://www.terabyteshop.com.br/produto/37219/gabinete-gamer-ninja-ryomaru-mini-tower-vidro-temperado-matx-sem-fonte-com-3-fans-rainbow-branco-gn-cs-rmmaw3f?srsltid=AfmBOopfR8VIaYZBqIrHYAFfWRRcuzjB-7ZfZrNIqsT28TaAYpinoTACopw" target="_blank"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSgyJG5NogXUSyyDFyHeJ30kNEik96IZBNCJa8pGpd7GYv5NuuLIYJnH8NXZpgDNLmGtfcquyZIMqsS-MHoDsYEv2G6wIXX" alt="gabinete" width="100px"></a></td>
+            <td>R$ 50.00</td>
+        </tr>
+        <tr>
+            <td>01234</td>
+            <td>Eletronico</td>
+            <td>Mouse</td>
+            <td><a href="https://www.kalunga.com.br/prod/headphone-bluetooth-vj320-entrada-p2-slot-de-cartao-tf-aux-microfone-integrado-preto-loop-way-cx-1-un/282286?srsltid=AfmBOopdWTw1rP56yhhygrWLihsUFt4Rl2h4hfmOuuvk7VDNPJp-jQUprJw" target="_blank"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLO9wcqyDXfomXNc3uQTbDyAkEkCCfO4Ut2P0OO1Mdm2T4wjfrHyhAEM245KYsyqHgWoOihsahDXz7FEmxFqS6XWYZ7SDw" alt="mouse" width="100px"></a></td>
+            <td>R$ 100.00</td>
+        </tr>
+        <tr>
+            <td colspan="4">Total</td>
+            <td>R$ 1850</td>
+        </tr>
     </table>
     
 </body>
