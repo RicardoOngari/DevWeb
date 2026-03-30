@@ -1,0 +1,24 @@
+/* Utilizando seletor simples (nome da tag) */
+
+body{
+    background-color: gray;
+}
+
+h1{
+    text-align: center;
+}
+/* todos p */
+p{
+    text-align: center;
+    color: rgb(35, 78, 158);
+}
+/* Utilizando seletor ID */
+#para01{
+    color: aqua;
+    text-align: right; 
+}
+/* Utilizando seletor classe */
+.classe{
+    text-align: left;
+    color: rgb(163, 36, 36);
+}
