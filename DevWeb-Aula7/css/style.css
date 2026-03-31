@@ -1,5 +1,15 @@
-/* Utilizando seletor simples (nome da tag) */
+/* Reiniciar os valores dos componententes para um valor conhecido */
+/*  : pseudo-classe */
+/*  :: componente */
+*,* ::after,*::before {
+    /* Especifica que a largura do componente é total */
+    box-sizing: border-box;
+    /* Limpa as formataçoes da margem e borda */
+    padding: 0;
+    margin: 0;
+}
 
+/* Utilizando seletor simples (nome da tag) */
 body{
     background-color: gray;
 }
