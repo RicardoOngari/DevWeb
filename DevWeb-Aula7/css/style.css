@@ -18,10 +18,10 @@ h1{
     text-align: center;
 }
 /* todos p */
-p{
+/* p{
     text-align: center;
     color: rgb(35, 78, 158);
-}
+} */
 /* Utilizando seletor ID */
 #para01{
     color: aqua;
@@ -31,4 +31,57 @@ p{
 .classe{
     text-align: left;
     color: rgb(163, 36, 36);
+}
+
+/* -------------------AULA 08------------------- */
+
+/* Selecionando os elementos HTML utilizando pseudo-classe */
+
+/* Link Selecionado */
+nav>a:link{
+    color: yellow;
+
+}
+/* Link visitado */
+nav>a:visited{
+    color: rgb(0, 255, 0);
+}
+/* Link ativo */    
+nav>a:active{
+    color: red;
+    
+}
+/* Link mouse hover */
+nav>a:hover{
+    color: hotpink;
+    
+}
+
+/* Apresentando elementos ocultos */
+.oculta>p{
+    display: none; 
+    color: red;
+    background-color: yellow;
+    text-align: 1.2rem;
+}
+/* Exibe elemento p */
+.oculta:hover>p{
+    display: block;
+}
+
+/* Utilizando o seletor de pseudo::elemento para formatar a primeira linha de um paragrafo */
+.foramtpseudoelement::first-line{
+    color: red;
+    background-color: aqua;
+}
+/* Formatando a primeira letra de um paragrafo */
+.foramtpseudoelement::first-letter{
+    font-size: xx-large;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Utilizando pseudo::elemento para "habilitar" o marcador de texto */
+::selection{
+    color: red;
+    background-color: lightgreen;
 }
